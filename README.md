@@ -1,6 +1,6 @@
 <h1> Kanye Komputer writes a book </h1>
 
-<p>Well, more of a book of kanye-isms</p>
+<p>Well, more of a book of kanye-isms. Can a kanye chatbot gone writer shed light on the mysteries of the Kanye-verse?</p>
 
 <p> Attempting to contribute to the NaNoGenMo party.</p>
 
