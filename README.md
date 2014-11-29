@@ -12,5 +12,5 @@
 <p>kanye-lyrics.txt - a selection of lyrics (didn't end up using).</p>
 <p>kanye-isms.txt - generated kanye-isms. about 59,000 words.</p>
 <p>kanye-novel.js - this does the creation of the actual kanye-ism novel file.</p>
-<p>there are a bunch of other files (mostly unfinished experiements.</p>
+<p>there are a bunch of other files (mostly unfinished experiements).</p>
 <p>the kanye-site file will have the web presentation version once its done.</p>
