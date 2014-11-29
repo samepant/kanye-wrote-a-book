@@ -7,7 +7,7 @@ var newValues = function (oldCoord) {
     //console.log(item + " : " + isNaN(item));
     var numCheck = parseInt(item);
 
-    if (!isNaN(numCheck) && (Math.random() > 0.9999)) {
+    if (!isNaN(numCheck) && (Math.random() > 0.5)) {
       item = (item + (Math.random() * 1));
       item = Math.ceil(item);
     }
