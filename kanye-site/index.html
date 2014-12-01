@@ -19,6 +19,8 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <div class="kanye-poems">
+        </div>
         <div class="kanye-gets-deconstructed-and-serves-as-a-foil-for-us-all">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 700 700" enable-background="new 0 0 700 700" xml:space="preserve">
                 <path fill="#181513" d="M459.9,17c46.8,22.8,71,41.4,85.9,76.9c3.4,8.1,5.3,16.8,7.9,25.2c5,9.4,7.8,19.4,8.6,29.9
@@ -677,7 +679,27 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script>
-           /* window.setInterval(function(){
+            $(document).ready(function() {
+                $.ajax({
+                    url : "http://localhost:8080/kanye-isms.txt",
+                    dataType: "text",
+                    success : function (data) {
+                        var kanyeParent = $(".kanye-poems");
+                        var kanyeArray = data.split('\n');
+                        kanyeArray = shuffle(kanyeArray);
+                        for (var i = kanyeArray.length - 1; i >= 0; i--) {
+                            var poem = kanyeArray[i];
+                            var poemHolder = document.createElement('p');
+                            poemHolder.setAttribute('class', 'poem');
+                            poemHolder.innerHTML = poem;
+                            kanyeParent.append(poemHolder);
+                        };
+                    }
+                });
+            });
+        </script>
+        <script>
+           window.setInterval(function(){
               d3.selectAll("path")
               .transition()
               .duration(2000)
@@ -686,11 +708,7 @@
                 var newD = newValues(currentD);
                 return newD;
               });
-            }, 2000); */
-
-           var test = d3.select("path").attr("d");
-           console.log(test);
-           console.log(newValues(test));
+            }, 2000);
         </script>
 
     </body>

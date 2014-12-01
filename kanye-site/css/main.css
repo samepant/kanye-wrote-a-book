@@ -61,6 +61,11 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
+body {
+    font-family: cursive;
+}
+
  .kanye-gets-deconstructed-and-serves-as-a-foil-for-us-all {
     position: fixed;
     bottom: -7px;
@@ -68,8 +73,11 @@ textarea {
     width: 600px;
  }
 
-
-
+.kanye-poems {
+    padding: 10px 0 0 30px;
+    font-size: 25px;
+    width: 50%;
+}
 
 
 

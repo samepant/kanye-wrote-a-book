@@ -5,7 +5,7 @@
 
     <!-- Most restrictive policy: -->
     <site-control permitted-cross-domain-policies="none"/>
-
+    <allow-access-from domain="sampanter.com" />
     <!-- Least restrictive policy: -->
     <!--
     <site-control permitted-cross-domain-policies="all"/>
