@@ -14,3 +14,6 @@
 <p>kanye-novel.js - this does the creation of the actual kanye-ism novel file.</p>
 <p>there are a bunch of other files (mostly unfinished experiements).</p>
 <p>the kanye-site file will have the web presentation version once its done.</p>
+
+<h2>Web Viewing</h2>
+<p><a href="http://sampanter.com/kanyepoems">a web version!</a></p>
